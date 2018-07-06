@@ -1,0 +1,12 @@
+@mixin fonts($family, $filename, $folder, $style: normal, $weight: 400)
+  @font-face
+    font-family: $family
+    src: url('#{$folder}/#{$filename}.eot')
+    src: url('#{$folder}/#{$filename}.woff') format("woff")
+    src: url('#{$folder}/#{$filename}.ttf') format("truetype")
+    src: url('#{$folder}/#{$filename}.svg#08bb4ba465a902745fc23c83a5d9fdc2') format("svg")
+    font-style: $style
+    font-weight: $weight
+
+=fz($size)
+  font-size: ($size/16) + 0em

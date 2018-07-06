@@ -1,0 +1,17 @@
+extends layouts/layout
+include  ../components/**/*.jade
+include sections/files
+block title
+    | 123
+block content
+    include sections/slider
+    include sections/projects
+    +files('Пройдите тест на свой идеальный дом','green')
+    include sections/projects
+    +files('Скачайте “Какая должна быть идеальная баня”','orange')
+    include sections/projects
+    +files('Скачайте  Наш полный каталог','yellow')
+    include sections/numbers
+    include sections/review
+    include sections/pred
+    include sections/contacts

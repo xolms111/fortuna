@@ -1,0 +1,41 @@
+.buttons
+  .button
+    -webkit-border-radius: 10px
+    -moz-border-radius: 10px
+    border-radius: 10px
+    display: block
+    width: 100%
+    margin: 0 auto
+    padding: 7px 0
+    +fz(20)
+.button
+  cursor: pointer
+  text-align: center
+  border: none
+  outline: none
+  background-color: #fff
+  margin: 0 auto
+  transition: all .25s
+  color: #000
+  &:hover
+    outline: none
+    color: #000
+    background-color: darken(#fff, 5%)
+  &_green
+    background-color: #b8fd75
+    &:hover
+      background-color: darken(#b8fd75, 5%)
+  &_orange
+    background-color: #f5a556
+    &:hover
+      background-color: darken(#f5a556, 5%)
+  &_yellow
+    background-color: #f5d256
+    &:hover
+      background-color: darken(#f5d256, 5%)
+  &_blue
+    background-color: #5fc0e9
+    color: #ffffff
+    &:hover
+      background-color: darken(#5fc0e9, 5%)
+      color: #ffffff

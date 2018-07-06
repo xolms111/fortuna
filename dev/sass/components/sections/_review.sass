@@ -1,0 +1,36 @@
+.review
+  padding: 10px 10px
+  border: 1px solid #ebebeb
+  &__image
+    overflow: hidden
+    -webkit-border-radius: 10em
+    -moz-border-radius: 10em
+    border-radius: 10em
+    img
+      vertical-align: top
+  &__name
+    color: #4dc6f9
+    +fz(19)
+    padding-left: 5px
+    text-transform: uppercase
+  &__text
+    +fz(20)
+    padding: 10px
+    color: #1f4f58
+    p:first-letter
+      padding-left: 15px
+  &__footer
+    padding-top: 20px
+  &__build
+    text-transform: uppercase
+    +fz(20)
+    color: #092f36
+    a
+      color: #4dc6f9
+  &__link
+    a
+      color: #092f36
+      +fz(20)
+@media screen and (max-width: 992px)
+  .review
+    margin-bottom: 30px

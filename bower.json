@@ -1,0 +1,27 @@
+{
+  "name": "mytemplate",
+  "description": "",
+  "main": "index.js",
+  "authors": [
+    "DESKTOP-SJ90ONP\\Степан <kuzovovstepan1996@yandex.ru>"
+  ],
+  "license": "ISC",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "build/plugins",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery.maskedinput": "jquery-maskedinput#^1.4.1",
+    "bootstrap": "^4.1.1",
+    "jquery": "^3.3.1",
+    "font-awesome": "^5.1.0",
+    "normalize-css": "^8.0.0",
+    "modernizr": "^3.6.0",
+    "slick-carousel": "^1.8.1"
+  }
+}

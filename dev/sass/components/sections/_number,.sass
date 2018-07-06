@@ -1,0 +1,20 @@
+.number
+  &__bold
+    color: #ffffff
+    margin-bottom: 0
+    font-size: 7vw
+    line-height: 1
+    font-weight: bold
+  &__desc
+    +fz(28)
+    margin-bottom: 0
+    text-transform: lowercase
+    line-height: 1.1
+@media screen and (max-width: 992px)
+  .number
+    &__desc
+      margin-bottom: 20px
+@media screen and (max-width: 500px)
+  .number
+    &__bold
+      +fz(50)
