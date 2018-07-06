@@ -3,4 +3,5 @@ node_modules
 .idea
 .sass-cache
 templates
+build/plugins
 mynotes.txt
