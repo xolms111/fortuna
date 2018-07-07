@@ -1,0 +1,22 @@
+.breadcrumbs
+  padding: 10px 0
+  ul
+    display: flex
+    align-items: center
+    padding: 0
+    margin: 0
+    list-style-type: none
+    li
+      padding-right: 10px
+      a, span
+        color: #000
+        +fz(17)
+    li::after
+      content: '>>>'
+      padding-left: 10px
+    li:last-child
+      &::after
+        display: none
+@media screen and (max-width: 768px)
+  .breadcrumbs
+    display: none

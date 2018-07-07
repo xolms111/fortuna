@@ -1,6 +1,20 @@
 $(document).ready(function() {
 	$('.slider').slick({
 		dots: true,
+		arrows: false
+	});
+	$('.project__slider').slick({
+		dots: true,
+		arrows: false,
+		infinite: false,
+		asNavFor: '.project__subslider'
+	});
+	$('.project__subslider').slick({
+		dots: false,
+		arrows: false,
+		asNavFor: '.project__slider',
+		slidesToShow: 3,
+		slidesToScroll: 1,
 	});
 	$('input[name=phone]').mask('(999) 999-9999');
 	$('.burger').click(function() {
@@ -24,4 +38,26 @@ $(document).ready(function() {
 			$('.navigation').removeClass('fixed');
 		}
 	})
+
+
+
+	$('.magnific-slider').magnificPopup({
+		delegate: 'a',
+		type: 'image',
+		tLoading: 'Загрузка изображения #%curr%...',
+		mainClass: 'mfp-img-mobile',
+		gallery: {
+			enabled: true,
+			navigateByImgClick: true,
+			preload: [0,1] // Will preload 0 - before current, and 1 after the current image
+		},
+		image: {
+			tError: '<a href="%url%">Изображение #%curr%</a> не может быть загруженно.',
+			titleSrc: function(item) {
+				return item.el.attr('title');
+			}
+		}
+	});
+
+
 })

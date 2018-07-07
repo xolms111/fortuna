@@ -1,0 +1,50 @@
+.footer
+  background-color: #444444
+  padding: 60px 0 0
+  color: #fff
+  &__copyright
+    text-align: center
+    color: #fff
+    width: 100%
+    +fz(17)
+    margin-bottom: 0
+    padding: 20px 0
+  &__logo
+    img
+      max-width: 100%
+  ul
+    list-style-type: none
+    padding-left: 10px
+    margin: 0
+    a
+      color: #fff
+    li.active
+      a
+        text-decoration: underline
+  h3
+    +fz(17)
+    color: #fff
+  &__callback
+    +fz(16)
+    font-style: italic
+    p
+      margin-bottom: 0
+  &__phone
+    a
+      color: #fff
+      +fz(30)
+  &__address
+    margin-top: 10px
+    +fz(16)
+    p
+      margin-bottom: 0
+    a
+      color: #fff
+@media screen and (max-width: 992px)
+  .footer
+    h3
+      margin-top: 20px
+@media screen and (max-width: 768px)
+  .footer
+    &__callback
+      margin-top: 20px

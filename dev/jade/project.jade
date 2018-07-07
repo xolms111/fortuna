@@ -1,0 +1,54 @@
+extends layouts/layout
+include  ../components/**/*.jade
+include sections/files
+block title
+    | Проект
+block content
+    include components/breadcrumbs
+    main.main
+        .container
+            .row
+                h1 Дом «Фламинго»
+            .row
+                .col-12.col-lg-9
+                    .magnific-slider
+                        .project__slider
+                            .item
+                                a(href='images/project.jpg' title='123')
+                                    img(src='images/project.jpg')
+                            .item
+                                a(href='images/project.jpg' title='123')
+                                    img(src='images/project.jpg')
+                            .item
+                                a(href='images/project.jpg' title='123')
+                                    img(src='images/project.jpg')
+                            .item
+                                a(href='images/project.jpg' title='123')
+                                    img(src='images/project.jpg')
+                        .project__subslider
+                            .item
+                                img(src='images/project.jpg')
+                            .item
+                                img(src='images/project.jpg')
+                            .item
+                                img(src='images/project.jpg')
+                            .item
+                                img(src='images/project.jpg')
+                .col-12.col-lg-3
+                    .project__desc
+                        ul
+                            li Площадь
+                                span 157 кв.м
+                            li Материал стен
+                                span Керамический блок + Клееный брус
+                            li Комнат
+                                span 4
+                            li Санузла
+                                span 2
+                            li Цена
+                                span 285 700 руб.
+                    .project__button.project__add
+                        button.button.button_blue Заказать дом
+    +files('Скачайте презентацию дома', 'green')
+    include sections/projects
+

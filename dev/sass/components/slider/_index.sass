@@ -5,6 +5,8 @@
     background-size: cover
     background-repeat: no-repeat
     padding: 25vh 0
+    img
+      width: 100%
   .slide
     h2
       display: inline
@@ -52,21 +54,24 @@
         
         
       
-  .slick-dots
-    bottom: 10px
-  .slick-dots li button:before
-    color: #fff
-    opacity: 1
-  .slick-dots li button
-    border: 1px solid #fff
-    -webkit-border-radius: 50px
-    -moz-border-radius: 50px
-    border-radius: 50px
-  .slick-dots li.slick-active button:before
-    font-size: 15px
-    line-height: 1.53
+.slick-dots
+  bottom: 10px
+.slick-dots li button:before
+  color: #fff
+  opacity: 1
+.slick-dots li button
+  border: 1px solid #fff
+  -webkit-border-radius: 50px
+  -moz-border-radius: 50px
+  border-radius: 50px
+.slick-dots li.slick-active button:before
+  font-size: 15px
+  line-height: 1.53
   &.slick-dotted.slick-slider
     margin-bottom: 0px
+.slick-dots li.slick-active button:before
+  color: #ffffff
+  opacity: 1
 
 @media screen and (max-width: 992px)
   .slide__form
