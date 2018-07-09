@@ -70,4 +70,40 @@ $(document).ready(function() {
 		$('.modal').fadeOut()
 	})
 
+
+	$( ".slider__price" ).slider({
+		range: true,
+		min: 3,
+		max: 8,
+		values: [ 3, 8 ],
+		slide: function( event, ui ) {
+			$( ".filter input[name=min-price]" ).val(ui.values[ 0 ]);
+			$( ".filter input[name=max-price]" ).val(ui.values[ 1 ]);
+		}
+	});
+	$('.filter input[name=min-price]').change(function() {
+		$( ".slider__price" ).slider('values', 0 , $(this).val())
+	})
+	$('.filter input[name=max-price]').change(function() {
+		$( ".slider__price" ).slider('values', 1 , $(this).val())
+	})
+	$( ".slider__area" ).slider({
+		range: true,
+		min: 3,
+		max: 8,
+		values: [ 3, 8 ],
+		slide: function( event, ui ) {
+			$( ".filter input[name=min-area]" ).val(ui.values[ 0 ]);
+			$( ".filter input[name=max-area]" ).val(ui.values[ 1 ]);
+		}
+	});
+	$('.filter input[name=min-area]').change(function() {
+		$( ".slider__area" ).slider('values', 0 , $(this).val())
+	})
+	$('.filter input[name=max-area]').change(function() {
+		$( ".slider__area" ).slider('values', 1 , $(this).val())
+	})
+
 })
+
+

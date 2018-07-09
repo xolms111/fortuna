@@ -1,0 +1,52 @@
+.filter
+  background-color: #f2f2f2
+  padding: 15px 25px
+  color: #092f36
+  b
+    display: block
+    padding-bottom: 10px
+    font-weight: bold
+    +fz(17)
+  ul
+    list-style-type: square
+    padding: 0
+    margin: 0
+    li
+      margin-bottom: 10px
+  input
+    display: inline-block
+  label
+    display: block
+    span
+      padding-left: 5px
+      +fz(18)
+  input[type=number]
+    width: 40px
+    margin: 0 2px
+  .filter__slider
+    margin-top: 20px
+    margin-bottom: 15px
+    &.ui-widget.ui-widget-content
+      border: none
+    &.ui-widget-content
+      background-color: lighten(#006ab3, 10%)
+    &.ui-slider-horizontal
+      height: 5px
+    .ui-widget-header
+      background-color: #006ab3
+    .ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default, .ui-button, html .ui-button.ui-state-disabled:hover, html .ui-button.ui-state-disabled:active
+      border: none
+      -webkit-border-radius: 10em
+      -moz-border-radius: 10em
+      border-radius: 10em
+      background-color: #006ab3
+      top: -7px
+  p
+    margin-bottom: 5px
+  &__button
+    margin-top: 30px
+    button
+      display: block
+      width: 100%
+      padding: 6px 0
+      background-color: #fff

@@ -9,6 +9,56 @@ block content
         .container
             .row
                 .col-12.col-lg-3
+                    .filter
+                        form
+                            ul
+                                li
+
+                                    b Размер дома
+                                    label
+                                        input(type='checkbox' name='size[frost]' value='Зимний')
+                                        span Зимний
+                                    label
+                                        input(type='checkbox' name='size[dacha]' value='Дачный')
+                                        span Дачный
+                                li
+                                    b Стоимость
+                                    span от
+                                    input(type='number' placeholder='3' name='min-price')
+                                    span до
+                                    input(type='number' placeholder='8' name='max-price')
+                                    span млн. руб.
+                                    .slider__price.filter__slider
+                                li
+
+                                    b Этажность
+                                    label
+                                        input(type='checkbox' name='floor' value='1')
+                                        span один этаж
+                                    label
+                                        input(type='checkbox' name='floor' value='2')
+                                        span два этажа
+                                li
+
+                                    b Технология
+                                    p Клееный  брус, размер:
+                                    label
+                                        input(type='checkbox' name='floor' value='1')
+                                        span один этаж
+                                    label
+                                        input(type='checkbox' name='floor' value='2')
+                                        span два этажа
+                                li
+                                    b Площадь
+                                    span от
+                                    input(type='number' placeholder='3' name='min-area')
+                                    span до
+                                    input(type='number' placeholder='8' name='max-area')
+                                    span кв.м
+                                    .slider__area.filter__slider
+
+                            .filter__button
+                                button(type='reset').button Сбросить фильтр
                 .col-12.col-lg-9
                     h1 Проекты домов
                     .row
