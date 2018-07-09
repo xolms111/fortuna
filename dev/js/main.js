@@ -58,6 +58,16 @@ $(document).ready(function() {
 			}
 		}
 	});
-
+	$('.modal-open').click(function (e) {
+		e.preventDefault();
+		var title = $(this).attr('data-title')
+		$('.modal__title').text(title)
+		$('.modal__form input[name=theme]').val(title)
+		$('.modal').fadeIn()
+		return false
+	})
+	$('.modal__cross').click(function() {
+		$('.modal').fadeOut()
+	})
 
 })

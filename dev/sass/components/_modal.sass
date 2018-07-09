@@ -1,0 +1,90 @@
+.modal
+  background-color: rgba(#000, .3)
+  &__wrapper
+    position: absolute
+    top: 50%
+    left: 0
+    right: 0
+    transform: translateY(-50%)
+    max-width: 800px
+    width: 100%
+    background-color: #fff
+    -webkit-border-radius: 20px
+    -moz-border-radius: 20px
+    border-radius: 20px
+    margin: 0 auto
+  &__title
+    text-align: center
+    padding: 0
+    margin: 0
+    +fz(36)
+    font-weight: bold
+  &__head
+    position: relative
+    padding: 40px 0
+  &__line
+    background-image: url(../images/colorize.png)
+    height: 5px
+    width: 100%
+    -webkit-background-size: cover
+    background-size: cover
+    background-repeat: no-repeat
+  &__cross
+    position: absolute
+    width: 40px
+    height: 40px
+    top: 15px
+    cursor: pointer
+    right: 15px
+    span
+      width: 40px
+      height: 5px
+      background-color: #000
+      display: inline-block
+      position: relative
+      &:first-child
+        transform: rotate(45deg)
+      &:last-child
+        top: -23px
+        transform: rotate(-45deg)
+  &__footer
+    padding-top: 50px
+  &__body
+    max-width: 408px
+    width: 100%
+    margin: 0 auto
+    padding: 40px 0
+  &__desc
+    text-align: center
+    +fz(20)
+    color: #444
+    padding-bottom: 20px
+  &__form
+    .item
+      padding-top: 10px
+      input
+        width: 100%
+        border: 1px solid #a4a4a4
+        +fz(17)
+        padding: 15px 10px
+      button
+        display: block
+        width: 100%
+        padding: 10px 0
+        +fz(22)
+        font-weight: bold
+        -webkit-border-radius: 10px
+        -moz-border-radius: 10px
+        border-radius: 10px
+      p
+        +fz(14)
+        color: #a4a4a4
+      a
+        color: #a4a4a4
+@media screen and (max-height: 700px)
+  .modal
+    overflow: auto
+    &__wrapper
+      position: relative
+      top: 0
+      transform: translateY(0)

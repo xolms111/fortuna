@@ -48,7 +48,7 @@
 						</div>
 						<div class="col-12 col-md-6 col-lg-3 text-lg-right text-center d-none d-lg-block">
 							<div class="header__button">
-								<button class="button modal-open">Заказать звонок</button>
+								<button data-title="Заказать звонок" class="button modal-open">Заказать звонок</button>
 							</div>
 						</div>
 						<div class="col-7 col-md-4 col-lg-3 text-lg-right text-center">
@@ -223,7 +223,7 @@
 					<div class="col-12 col-lg-6">
 						<h2>Пройдите тест на свой идеальный дом</h2>
 					</div>
-					<div class="col-12 col-sm-6 col-lg-3 text-center"><a href="#" class="button button_green">Пройти тест на дом</a></div>
+					<div class="col-12 col-sm-6 col-lg-3 text-center"><a href="#" data-title="Заказать звонок" class="button button_green modal-open">Пройти тест на дом</a></div>
 					<div class="col-12 col-sm-6 col-lg-3 text-center"><a href="#" class="button">Посмотреть все дома</a></div>
 				</div>
 			</div>
@@ -271,7 +271,7 @@
 					<div class="col-12 col-lg-6">
 						<h2>Скачайте “Какая должна быть идеальная баня”</h2>
 					</div>
-					<div class="col-12 col-sm-6 col-lg-3 text-center"><a href="#" class="button button_orange">Пройти тест на дом</a></div>
+					<div class="col-12 col-sm-6 col-lg-3 text-center"><a href="#" data-title="Заказать звонок" class="button button_orange modal-open">Пройти тест на дом</a></div>
 					<div class="col-12 col-sm-6 col-lg-3 text-center"><a href="#" class="button">Посмотреть все дома</a></div>
 				</div>
 			</div>
@@ -319,7 +319,7 @@
 					<div class="col-12 col-lg-6">
 						<h2>Скачайте  Наш полный каталог</h2>
 					</div>
-					<div class="col-12 col-sm-6 col-lg-3 text-center"><a href="#" class="button button_yellow">Пройти тест на дом</a></div>
+					<div class="col-12 col-sm-6 col-lg-3 text-center"><a href="#" data-title="Заказать звонок" class="button button_yellow modal-open">Пройти тест на дом</a></div>
 					<div class="col-12 col-sm-6 col-lg-3 text-center"><a href="#" class="button">Посмотреть все дома</a></div>
 				</div>
 			</div>
@@ -476,6 +476,38 @@
 				</div>
 			</div>
 		</footer>
+		<div class="modal">
+			<div class="modal__wrapper">
+				<div class="modal__head">
+					<h3 class="modal__title">Скачать презентацию</h3>
+					<div class="modal__cross"><span></span><span></span></div>
+				</div>
+				<div class="modal__line"></div>
+				<div class="modal__body">
+					<div class="modal__desc">Мы вышлем вам презентацию на е-майл, чтобы вы могли ознакомиться со всеми нюансами и сделать выбор.</div>
+					<div class="modal__form">
+						<form>
+							<div class="item">
+								<input type="text" placeholder="Имя" name="name">
+							</div>
+							<div class="item">
+								<input type="mail" placeholder="E-mail" name="email">
+							</div>
+							<div class="item">
+								<input type="text" placeholder="Телефон" name="phone">
+								<input type="hidden" name="theme" class="theme">
+							</div>
+							<div class="item">
+								<p>Нажимая кнопку отправить вы соглашаетесь на условия использования сайта, в том числе в части<a href="#">обработки персональных данных.</a></p>
+								<button class="button button_blue">Отправить</button>
+							</div>
+						</form>
+					</div>
+				</div>
+				<div class="modal__line"></div>
+				<div class="modal__footer"></div>
+			</div>
+		</div>
 		<script src="plugins/jquery/dist/jquery.js"></script>
 		<script src="plugins/jquery.maskedinput/dist/jquery.maskedinput.js"></script>
 		<script src="plugins/slick-carousel/slick/slick.js"></script>

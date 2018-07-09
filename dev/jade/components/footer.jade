@@ -41,3 +41,28 @@ footer.footer
                         a(href='tel:+74957771167') +7 (495) 777-11-67
         .row.text-center
             .footer__copyright © 2007-2018. Фортуна-лес. Домостроительная компания.
+.modal
+    .modal__wrapper
+        .modal__head
+            h3.modal__title Скачать презентацию
+            .modal__cross
+                span
+                span
+        .modal__line
+        .modal__body
+            .modal__desc Мы вышлем вам презентацию на е-майл, чтобы вы могли ознакомиться со всеми нюансами и сделать выбор.
+            .modal__form
+                form
+                    .item
+                        input(type='text' placeholder='Имя' name='name')
+                    .item
+                        input(type='mail' placeholder='E-mail' name='email')
+                    .item
+                        input(type='text' placeholder='Телефон' name='phone')
+                        input(type='hidden' name="theme").theme
+                    .item
+                        p Нажимая кнопку отправить вы соглашаетесь на условия использования сайта, в том числе в части
+                            a(href='#') обработки персональных данных.
+                        button.button.button_blue Отправить
+        .modal__line
+        .modal__footer

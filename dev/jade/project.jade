@@ -48,7 +48,61 @@ block content
                             li Цена
                                 span 285 700 руб.
                     .project__button.project__add
-                        button.button.button_blue Заказать дом
+                        button.button.button_blue.modal-open(data-title="Заказать дом") Заказать дом
+            .tabs
+                .tabs__wrapper
+                    .item(data-type='Комплектация').active Комплектация
+                    .item(data-type='Планировки') Планировки
+                    .item(data-type='Разрез') Разрез
+                .tabs__content
+                    .item(data-type='Комплектация').active
+                        table.table.table-striped.table-responsive-md
+                            thead
+                                tr
+                                    th Без отделки - Зимний
+                                    th Хит
+                                    th Комфорт
+                            tbody
+                                tr
+                                    td(colspan='3').text-center
+                                        b Фундамент
+                                tr
+                                    td Свайно-винтовой
+                                    td Свайно-винтовой
+                                    td Свайно-винтовой
+                                tr
+                                    td(colspan='3').text-center
+                                        b Фундамент
+                                tr
+                                    td Свайно-винтовой
+                                    td Свайно-винтовой
+                                    td Свайно-винтовой
+                                tr
+                                    td(colspan='3').text-center
+                                        b Фундамент
+                                tr
+                                    td Свайно-винтовой
+                                    td Свайно-винтовой
+                                    td Свайно-винтовой
+                                tr
+                                    td(colspan='3').text-center
+                                        b Фундамент
+                                tr
+                                    td Свайно-винтовой
+                                    td Свайно-винтовой
+                                    td Свайно-винтовой
+                                tr
+                                    td(colspan='3').text-center
+                                        b Фундамент
+                                tr
+                                    td Свайно-винтовой
+                                    td Свайно-винтовой
+                                    td Свайно-винтовой
+
+                        p * До 60 км от п.ЦУС Мир Шатурского района МО
+                        p ** Монтаж печи и фурнитура, оплачиваются отдельно
+                    .item(data-type='Планировки')
+                    .item(data-type='Разрез')
     +files('Скачайте презентацию дома', 'green')
     include sections/projects
 
