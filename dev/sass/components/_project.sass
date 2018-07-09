@@ -6,9 +6,22 @@
     border-radius: 5px
     overflow: hidden
     margin-bottom: 10px
+    position: relative
     img
       width: 100%
       vertical-align: top
+    a
+      display: block
+      &::after
+        content: ''
+        position: absolute
+        top: 0
+        left: 0
+        right: 0
+        bottom: 0
+        background-color: #000
+        opacity: .3
+        transition: all .25s
   &__text
     text-align: center
     h3
@@ -39,3 +52,9 @@
       text-transform: lowercase
       &:hover
         background-color: darken(#08b9ec, 5%)
+        color: #fff
+  &:hover
+    .project__image
+      a
+        &::after
+          opacity: 0
