@@ -15,6 +15,12 @@
         font-weight: bold
         +fz(19)
         color: #96d07f
+        select
+          width: 100%
+          &:hover, &:focus
+            outline: none
+            color: #96d07f
+            background-color: #fff
 .project__add
   margin-top: 30px
   button
@@ -23,6 +29,11 @@
     width: 100%
     +fz(20)
     font-weight: bold
+.project__slider
+  -webkit-border-radius: 5px
+  -moz-border-radius: 5px
+  border-radius: 5px
+  overflow: hidden
 @media screen and (max-width: 992px)
   .project__desc
     margin-top: 30px
