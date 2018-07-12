@@ -15,6 +15,7 @@ $(document).ready(function() {
 		asNavFor: '.project__slider',
 		slidesToShow: 3,
 		slidesToScroll: 1,
+		focusOnSelect: true
 	});
 	$('input[name=phone]').mask('(999) 999-9999');
 	$('.burger').click(function() {
