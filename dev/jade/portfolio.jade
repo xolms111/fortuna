@@ -1,0 +1,39 @@
+extends layouts/layout
+include  ../components/**/*.jade
+include sections/files
+block title
+    | Проект
+block content
+    include components/breadcrumbs
+    main.main
+        .container
+            .portfolio
+                .portfolio__filter
+                    .item.active(data-filter="*") Все
+                    .item(data-filter='house') Дома
+                    .item(data-filter='bathhouse') Бани
+                    .item(data-filter='building') Постройки
+                .portfolio__items.magnific-slider
+                    .row
+                        .item(data-filter='house').show.col-lg-4.col-12
+                            a(href='images/project.jpg' title='123')
+                                img(src='images/project.jpg' alt='123')
+                                .text
+                                    h3 Дом «Крепостник» 6х7,5 <br/>в комплектации «ХИТ»
+                        .item(data-filter='house').show.col-lg-4.col-12
+                            a(href='images/project.jpg' title='123')
+                                img(src='images/project.jpg' alt='123')
+                                .text
+                                    h3 Дом «Крепостник» 6х7,5 <br/>в комплектации «ХИТ»
+                        .item(data-filter='building').show.col-lg-4.col-12
+                            a(href='images/project.jpg' title='123')
+                                img(src='images/project.jpg' alt='123')
+                                .text
+                                    h3 Дом «Крепостник» 6х7,5 <br/>в комплектации «ХИТ»
+                        .item(data-filter='bathhouse').show.col-lg-4.col-12
+                            a(href='images/project.jpg' title='123')
+                                img(src='images/project.jpg' alt='123')
+                                .text
+                                    h3 Дом «Крепостник» 6х7,5 <br/>в комплектации «ХИТ»
+
+

@@ -1,0 +1,73 @@
+.portfolio
+  &__filter
+    display: flex
+    align-items: center
+    border-bottom: 3px solid #cb85ad
+    margin-bottom: 30px
+    padding: 10px 0
+    .item
+      flex-basis: 15%
+      text-align: center
+      +fz(16)
+      color: #333333
+      cursor: pointer
+      &.active
+        font-weight: bold
+  &__items
+    .item
+      display: none
+      margin-bottom: 30px
+      a
+        position: relative
+        display: block
+        overflow: hidden
+        &:after
+          content: ''
+          position: absolute
+          top: 0
+          left: 0
+          right: 0
+          bottom: 0
+          z-index: 4
+          background-color: rgba(#000, .4)
+          opacity: 0
+          transition: all .25s
+      .text
+        position: absolute
+        left: 0
+        right: 0
+        width: 100%
+        bottom: -100%
+        z-index: 5
+        background-color: rgba(#292929, .8)
+        color: #ffffff
+        transition: all .25s
+        font-weight: bold
+        h3
+          +fz(19)
+          padding: 10px 15px
+          margin: 0
+      img
+        width: 100%
+      &.show
+        display: block
+      &:hover
+        .text
+          bottom: 0
+        a
+          &::after
+            opacity: 1
+.content-text
+  h2
+    font-weight: bold 
+    +fz(40)
+    color: #333
+    padding: 30px 0
+    margin: 0
+  p:first-letter
+    padding-left: 20px
+  .big
+    +fz(21)
+    color: #333
+  .big:first-letter
+    padding-left: 0

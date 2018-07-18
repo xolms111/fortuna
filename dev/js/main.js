@@ -105,6 +105,22 @@ $(document).ready(function() {
 		$( ".slider__area" ).slider('values', 1 , $(this).val())
 	})
 
+	//Фильтр
+	$('.portfolio__filter .item').click(function () {
+		if(!$(this).hasClass('active')) {
+			$('.portfolio__filter .item').removeClass('active');
+			$(this).addClass('active');
+			var attr = $(this).attr('data-filter');
+			if(attr == '*') {
+				$('.portfolio__items .item').addClass('show');
+			}
+			else {
+				$('.portfolio__items .item').removeClass('show');
+				$('.portfolio__items .item[data-filter='+attr+']').addClass('show')
+			}
+		}
+	})
+
 })
 
 
